@@ -1,0 +1,55 @@
+user: bookstore $ git init
+Initialized empty Git repository in /home/user/projects/bookstore/.git/
+user: bookstore $ git add .
+user: bookstore $ git commit -m "first commit"
+[master (root-commit) 987834d] first commit
+ 18 files changed, 975 insertions(+)
+ create mode 100644 .cdsrc.json
+ create mode 100644 .env1
+ create mode 100644 .gitignore
+ create mode 100644 db/data/sap.capire.bookstore-Authors.csv
+ create mode 100644 db/data/sap.capire.products-Categories.csv
+ create mode 100644 db/data/sap.capire.products-Products.csv
+ create mode 100644 db/data/sap.capire.products-Products_texts.csv
+ create mode 100644 db/schema.cds
+ create mode 100644 manifest.yml
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 pom.xml
+ create mode 100644 requests.http
+ create mode 100644 srv/pom.xml
+ create mode 100644 srv/services.cds
+ create mode 100644 srv/src/main/java/com/sap/cap/bookstore/Application.java
+ create mode 100644 srv/src/main/java/com/sap/cap/bookstore/handlers/OrdersService.java
+ create mode 100644 srv/src/main/resources/application.yaml
+user: bookstore $ git remote add origin https://github.tools.sap/C5277325/Bookshop_app.git
+user: bookstore $ git push -u origin main
+error: src refspec main does not match any.
+error: failed to push some refs to 'https://github.tools.sap/C5277325/Bookshop_app.git'
+user: bookstore $ git push -u origin master
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (32/32), 11.41 KiB | 2.28 MiB/s, done.
+Total 32 (delta 0), reused 0 (delta 0)
+remote: [Block File Extensions] Scanning for sensitive file extensions.
+remote: [Block File Extensions] No sensitive file extensions found.
+To https://github.tools.sap/C5277325/Bookshop_app.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+user: bookstore $ git branch -M main
+user: bookstore $ git push origin HEAD:main
+Total 0 (delta 0), reused 0 (delta 0)
+remote: [Block File Extensions] Scanning for sensitive file extensions.
+remote: [Block File Extensions] No sensitive file extensions found.
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.tools.sap/C5277325/Bookshop_app/pull/new/main
+remote:
+remote: GitHub found 3 vulnerabilities on C5277325/Bookshop_app's default branch (2 critical, 1 high). To find out more, visit:
+remote:      https://github.tools.sap/C5277325/Bookshop_app/security/dependabot
+remote:
+To https://github.tools.sap/C5277325/Bookshop_app.git
+ * [new branch]      HEAD -> main
+user: bookstore $Well Done - You have pushed your project successfully into repository.
